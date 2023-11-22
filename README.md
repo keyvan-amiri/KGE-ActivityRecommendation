@@ -20,7 +20,7 @@ to clone this github repository including the datasets used in our experiments a
 
 All datasets used in our experiment can be found in the folder **bpmai datasets** within current repository, while the following table provides additional information about these datasets:
 
-| Header 1 | Header 2 |
+| Folder name | Corresponding dataset in the paper |
 |----------|----------|
 | bpmai_lastrev_caise_onlyAfter  | Translation approach **1** without augmentation | 
 | bpmai_lastrev_caise_onlyAfter2 | Augmented dataset for translation approach **1**| 
