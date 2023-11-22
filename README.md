@@ -10,8 +10,9 @@ As it is mentioned in our paper, we relied on the PyTorch-based library [libKGE]
 2. Navigate to **kge** folder: `cd kge` (We recommend to create a virtual python environment using: `python -m venv kge_work` `source kge_work/bin/activate` for better handling of all dependencies between libraries.)
 3. Install all requirements: `pip install -e .`
 4. Make yourself familiar with main functionalities of libKGE using the documentation provided on the [libKGE repository](https://github.com/uma-pi1/kge). 
+
 # Adding datasets, and configuration files
-The **kge** folder includes a folder called **local** which will be used for all our experiments (see: https://github.com/uma-pi1/kge/tree/master/local). In order to replicated our results, you need to:
+The **kge** folder includes a folder called **local** which will be used for all our experiments (see: https://github.com/uma-pi1/kge/tree/master/local). In order to replicate our results, you need to:
 1. Clone this github repository: `git clone https://github.com/keyvan-amiri/KGE-ActivityRecommendation.git`
 2. Copy the folder **KGE-ActivityRecommendation** (i.e., current repository) to the folder **kge/local**. 
 to clone this github repository including the datasets used in our experiments as well as the best configuration files for KGE models. This can be done as per following:
