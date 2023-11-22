@@ -11,3 +11,12 @@ As it is mentioned in our paper, we relied on the PyTorch-based library [libKGE]
 3. Install all requirements: `pip install -e .`
 # Adding datasets, and configuration files
 In the folder **kge**, you can observe that it includes a folder called **local**. We use this folder for all our experiments. To do so you need to clone this github repository including the datasets used in our experiments as well as the best configuration files for KGE models.
+All datasets used in our experiment can be found in the folder **bpmai datasets** within current repository, while the following table provides additional information about these datasets:
+| Header 1 | Header 2 |
+|----------|----------|
+| bpmai_lastrev_caise_onlyAfter  | Translation approach **1** without augmentation | 
+| bpmai_lastrev_caise_onlyAfter2 | Augmented dataset for translation approach **1**| 
+| bpmai_lastrev_caise | Translation approach **2a** without augmentation | 
+| bpmai_lastrev_caise2 | Augmented dataset for translation approach **2a** |
+| bpmai_lastrev_caise_inProcess | Translation approach **2b** without augmentation | 
+| bpmai_lastrev_caise_inProcess2 | Augmented dataset for translation approach **2b** | 
