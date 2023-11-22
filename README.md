@@ -11,7 +11,8 @@ As it is mentioned in our paper, we relied on the PyTorch-based library [libKGE]
 3. Install all requirements: `pip install -e .`
 4. Make yourself familiar with main functionalities of libKGE using the documentation provided on the [libKGE repository](https://github.com/uma-pi1/kge). 
 # Adding datasets, and configuration files
-In the folder **kge**, you can observe that it includes a folder called **local**. We use this folder for all our experiments. To do so you need to clone this github repository including the datasets used in our experiments as well as the best configuration files for KGE models.
+In the folder **kge**, you can observe that it includes a folder called **local**. We use this folder for all our experiments. To do so you need to clone this github repository including the datasets used in our experiments as well as the best configuration files for KGE models. This can be done as per following:
+
 All datasets used in our experiment can be found in the folder **bpmai datasets** within current repository, while the following table provides additional information about these datasets:
 
 | Header 1 | Header 2 |
@@ -26,4 +27,4 @@ All datasets used in our experiment can be found in the folder **bpmai datasets*
 <!-- Hey this is not remaining of the table. -->
 All configuration files that are used for training KGE models in our experiment can be found in the folder **configs** within current repository. Similar to the dataset folder, here we have separate subfolders for all datasets used in our experiments.
 
-For training, and evaluation of KGE models you need to copy all dataset folders to the folder **data** within the root folder **kge**. For more information, please refer to ["use your own dataset"](https://github.com/uma-pi1/kge#use-your-own-dataset) on github repository of libKGE. You also need to copy all configuration files to the related folders in the folder **data** within the root folder **kge**. For more information, please refer to ["Using LibKGE"](https://github.com/uma-pi1/kge#using-libkge). To simplify this process, we have provided the python file loblob which takes cares of adding dataasets, and configuration files to your libKGE. 
+For training, and evaluation of KGE models you need to copy all dataset folders to the folder **data** within the root folder **kge**. For more information, please refer to ["use your own dataset"](https://github.com/uma-pi1/kge#use-your-own-dataset) on github repository of libKGE. You also need to copy all configuration files to the related folders in the folder **data** within the root folder **kge**. For more information, please refer to ["Using LibKGE"](https://github.com/uma-pi1/kge#using-libkge). To simplify this process, we have provided the python file loblob which takes cares of adding dataasets, and configuration files to your **kge** folder. 
