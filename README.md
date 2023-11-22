@@ -23,5 +23,6 @@ All datasets used in our experiment can be found in the folder **bpmai datasets*
 | bpmai_lastrev_caise_inProcess | Translation approach **2b** without augmentation | 
 | bpmai_lastrev_caise_inProcess2 | Augmented dataset for translation approach **2b** | 
 
+<!-- Hey this is not remaining of the table. -->
 All configuration files that are used for training KGE models in our experiment can be found in the folder **configs** within current repository. Similar to the dataset folder, here we have separate subfolders for all datasets used in our experiments.
 For training, and evaluation of KGE models you need to copy all dataset folders to the folder called **data** within the root folder **kge**. For more information, please refer to ["use your own dataset"]([https://github.com/uma-pi1/kge](https://github.com/uma-pi1/kge#use-your-own-dataset) on github repository of libKGE.
