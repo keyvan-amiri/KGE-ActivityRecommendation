@@ -49,7 +49,7 @@ For instance, run `python preprocess_default.py bpmai_lastrev_caise2` for prepro
 # Training a KGE model
 Training a KGE model should be done by specifying training configuratons within a YAML file. All configuration files used in our experiments can be found in the folder **configs** and have been already moved to the related dataset folders in the cloned libKGE repository using the **file_transfer.py**. For more information see ["Using LibKGE"](https://github.com/uma-pi1/kge/tree/master#using-libkge) and ["Defalt configurations"](https://github.com/uma-pi1/kge/blob/master/kge/config-default.yaml) from the documentation provided on libKGE repository.
 
-To train a KGE model, navigate to **kge** folder (i.e. the root folder of cloned libKGE repository) use `kge start` command while providing the path to the relevant YAML configuration file. For instance, to train Distmult model on translation approach 1 simple run:
+To train a KGE model, navigate to **kge** folder (i.e. the root folder of cloned libKGE repository) use `kge start` command while providing the path to the relevant YAML configuration file. For instance, to train Distmult model on translation approach 1 simply run:
 
 `kge start data/bpmai_lastrev_caise_onlyAfter/distmult-KvsAll-kl.yaml`
 
