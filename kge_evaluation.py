@@ -64,8 +64,12 @@ def main(datapath,modelpath_kge):
         num_of_preds = 0
 
         # read the mappings
-        read_mapping(datapath + "entity_ids.del", n2e, e2n)
-        read_mapping(datapath + "relation_ids.del", n2r, r2n)
+        ent_map_path = os.path.join(datapath, "entity_ids.del")
+        rel_map_path = os.path.join(datapath, "relation_ids.del")
+        read_mapping(ent_map_path, n2e, e2n)
+        read_mapping(rel_map_path, n2r, r2n)
+        #read_mapping(datapath + "entity_ids.del", n2e, e2n)
+        #read_mapping(datapath + "relation_ids.del", n2r, r2n)
         # load the model
         checkpoint = load_checkpoint(modelpath_kge)
         model = KgeModel.create_from(checkpoint)
@@ -73,8 +77,10 @@ def main(datapath,modelpath_kge):
         prepare_filterset(fs, [])#[datapath + "train.txt", datapath + "valid.txt"])
 
         out = open(outputpath, "w")
-
-        f = open(datapath + prediction_tasks, "r")
+        
+        prediction_tasks_path = os.path.join(datapath, prediction_tasks)
+        f = open(prediction_tasks_path, "r")
+        #f = open(datapath + prediction_tasks, "r")
         counter = 0
         for x in f:
             token = x.split("\t")
