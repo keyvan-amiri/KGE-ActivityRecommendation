@@ -60,3 +60,15 @@ if __name__ == "__main__":
     preprocess_destination_path = os.path.join(data_folder_path, preprocess_file)
     shutil.copy(preprocess_source_path, preprocess_destination_path)
     #print(f"File copied from {preprocess_source_path} to {preprocess_destination_path}")
+    
+    # copy two pyton files to smoothly handle performance evaluation
+    kge_evaluation_file = "kge_evaluation.py"
+    fileter_and_evaluate_file = "filter_and_evaluate.py"
+    kge_evaluation_source_path = os.path.join(script_dir, preprocess_file)
+    kge_evaluation_destination_path = os.path.join(kge_folder_path, preprocess_file)
+    fileter_and_evaluate_source_path = os.path.join(script_dir, preprocess_file)
+    fileter_and_evaluate_destination_path = os.path.join(kge_folder_path, preprocess_file)
+    shutil.copy(kge_evaluation_source_path, kge_evaluation_destination_path)
+    shutil.copy(fileter_and_evaluate_source_path, fileter_and_evaluate_destination_path)
+    
+    
