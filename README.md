@@ -54,5 +54,5 @@ To train a KGE model, navigate to **kge** folder (i.e. the root folder of cloned
 `kge start data/bpmai_lastrev_caise_onlyAfter/distmult-KvsAll-kl.yaml`
 
 # Performance evaluation of a KGE model
-Results of a training job are automatically stored in a separate folder within the **kge/local/experiments** folder. Name of the folder includes the timestamp of start of the training job, as well as the name of the configuration file. For instance, for above training job we might have a folder name like this: 20231027-145406-distmult-KvsAll-kl . Apart from log file which can be used to get more insight about the learning process, we are mainly intrested in the best check point file that is saved in this folder. This file always has the same name: **checkpoint_best.pt**.
+Results of a training job are automatically stored in a separate folder within the **kge/local/experiments** folder. Name of this folder includes the timestamp of the start of the training job, as well as the name of the configuration file. For instance, for above training job we might have a folder name like this: 20231027-145406-distmult-KvsAll-kl . Apart from log file which can be used to get more insight about the learning process, we are mainly intrested in the best check point file that is saved in this folder. This file always has the same name: **checkpoint_best.pt**.
 
