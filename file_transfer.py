@@ -18,7 +18,7 @@ def copy_files_with_patterns(source_folders, target_folders, file_patterns):
             source_path = os.path.join(source, file_name)
             target_path = os.path.join(target, file_name)
             shutil.copy2(source_path, target_path)
-            print(f"Copied '{file_name}' from '{source}' to '{target}'.")
+            print(f"Copied '{file_name}'.")
 
 if __name__ == "__main__":
     # Get the path to the directory containing the script
