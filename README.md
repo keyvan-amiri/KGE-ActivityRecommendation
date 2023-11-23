@@ -38,3 +38,8 @@ All configuration files that are used for training KGE models in our experiment 
 For training, and evaluation of KGE models you need to copy all dataset folders to the folder **data** within the root folder **kge**. For more information, please refer to ["use your own dataset"](https://github.com/uma-pi1/kge#use-your-own-dataset) on github repository of libKGE. You also need to copy all configuration files to the related folders in the folder **data** within the root folder **kge**. For more information, please refer to ["Using LibKGE"](https://github.com/uma-pi1/kge#using-libkge). To simplify this process, we have provided **file_transfer.py** which takes care of adding all dataasets, and configuration files.
 
 # Preprocessing datasets
+Each dataset consists of three files **train.txt**, **valid.txt** and **test.txt** each of them including all relevant triples like this one:
+
+quotationsent_840044706_rev15	after	quotationrecieved_840044706_rev15
+
+In order to train and evaluate KGE models, you need to preprocess these files: first navigate to **kge/data** folder, and then run the preprocessing file while you provide the name of the dataset. For instance, for preprocessing the augmented version of translation approach 2a, you need to run: `python preprocess_default.py bpmai_lastrev_caise2`.
