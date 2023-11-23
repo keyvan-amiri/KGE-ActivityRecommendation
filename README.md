@@ -54,5 +54,12 @@ To train a KGE model, navigate to **kge** folder (i.e. the root folder of cloned
 `kge start data/bpmai_lastrev_caise_onlyAfter/distmult-KvsAll-kl.yaml`
 
 # Performance evaluation of a KGE model
-Results of a training job are automatically stored in a separate folder within the **kge/local/experiments** folder. Name of this folder includes the timestamp of the start of the training job, as well as the name of the configuration file. For instance, for above training job we might have a folder name like this: 20231027-145406-distmult-KvsAll-kl . Apart from log file which can be used to get more insight about the learning process, we are mainly intrested in the best check point file that is saved in this folder. This file always has the same name: **checkpoint_best.pt**.
+Results of a training job are automatically stored in a separate folder within the **kge/local/experiments** folder. Name of this folder includes the timestamp of the start of the training job, as well as the name of the configuration file. For instance, for above training job we might have a folder name like this: *20231027-145406-distmult-KvsAll-kl* . Apart from log file which can be used to get more insight about the learning process, we are mainly intrested in the best check point file that is saved in this folder. This file always has the same name: **checkpoint_best.pt**. For performance evaluation you only need to navigate to **kge** folder (i.e. the root folder of cloned libKGE repository) and run `kge_evaluation.py`.
+
+The `kge_evaluation.py` file provides overall results with respect to evaluation metrics, namely Hits@10 and MRR. It also creates two .text files for all predicted labels in the test set (one for original predictions, and one for predictions after post-processing). These fies by default will be saved in **kge/local/new results** folder. For instance if we have the following in one of these files:
+
+*searchforpatientsfile_1168188392_rev14 hasLabel searchforpatientsfile
+Tails: retrievesubjectdetailsbyid	searchforpatientsfile	notifyemployee ....*
+
+it means that the correct label *searchforpatientsfile* is predicted in the second position, and therefore, if we had only this one example in our test set we get MRR of 50\% .
 
