@@ -42,6 +42,8 @@ Each dataset consists of three files **train.txt**, **valid.txt** and **test.txt
 
 quotationsent_840044706_rev15	after	quotationrecieved_840044706_rev15
 
-In order to train and evaluate KGE models, you need to preprocess these files: first navigate to **kge/data** folder, and then run the preprocessing file while providing the name of the dataset as an argument. For instance, for preprocessing the augmented version of translation approach 2a, you need to run: `python preprocess_default.py bpmai_lastrev_caise2`. For more information, see the ["preprocessing file"](https://github.com/uma-pi1/kge/blob/master/data/preprocess/preprocess_default.py) in the libKGE library.
+In order to train and evaluate KGE models, you need to preprocess these files: first navigate to **kge/data** folder, and then run the preprocessing file while providing the name of the dataset as an argument.
+
+For instance, for preprocessing the augmented version of translation approach 2a, you need to run: `python preprocess_default.py bpmai_lastrev_caise2`. For more information, see the ["preprocessing file"](https://github.com/uma-pi1/kge/blob/master/data/preprocess/preprocess_default.py) in the libKGE library.
 
 
