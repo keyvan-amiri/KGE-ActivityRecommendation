@@ -8,9 +8,10 @@ import os
 from filter_and_evaluate import main_eval
 
 # User defined section
+model_ids = ["distmult"] #model_ids = ["RotatE", "distmult", "hitter", "TuckER", "TransE"]
 job_type = "train" # train or search  # if search please specify the best trial folder
 dataset_name = "bpmai_lastrev_caise_onlyAfter"
-result_folder_name = "20231021-142334-transformer-1vsAll-kl"
+result_folder_name = "20231123-122024-distmult-KvsAll-kl"
 best_trial_name = "00012"
 
 
@@ -39,10 +40,7 @@ context_file = os.path.join(script_dir, "local", "KGE-ActivityRecommendation",
 
 
 def main(datapath,modelpath_kge):
-
-
-    #model_ids = ["complex", "conve", "distmult", "hitter", "rescal", "transe"]
-    model_ids = ["distmult"] #Changed!
+    
     prediction_tasks = "test.txt"
     
     for model_id in model_ids:
