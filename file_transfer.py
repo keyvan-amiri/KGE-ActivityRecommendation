@@ -36,7 +36,7 @@ if __name__ == "__main__":
                      "bpmai_lastrev_caise_inProcess", "bpmai_lastrev_caise_inProcess2",
                      "bpmai_lastrev_caise", "bpmai_lastrev_caise2"]
     # Specify the file patterns for copy
-    file_patterns = [".txt", ".yml"]
+    file_patterns = [".txt", ".yaml"]
     
     # Transfer all dataset files 
     source_folders, target_folders = [], []
