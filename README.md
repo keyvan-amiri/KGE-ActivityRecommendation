@@ -53,5 +53,6 @@ To train a KGE model, navigate to **kge** folder (i.e. the root folder of cloned
 
 `kge start data/bpmai_lastrev_caise_onlyAfter/distmult-KvsAll-kl.yaml`
 
-
+# Performance evaluation of a KGE model
+Results of a training job is automatically stored in a separate folder within the **kge/local/experiments** folder. Name of the folder includes the timestamp of start of the training job, as well as the name of the configuration file. For instance, for above training job we might have a folder name like this: 20231027-145406-distmult-KvsAll-kl . 
 
