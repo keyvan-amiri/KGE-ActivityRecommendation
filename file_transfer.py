@@ -29,6 +29,7 @@ if __name__ == "__main__":
     local_folder_path = os.path.join(script_dir, "..")
     kge_folder_path = os.path.join(local_folder_path, "..")
     data_folder_path = os.path.join(kge_folder_path, "data")
+    preprocess_folder_path = os.path.join(data_folder_path, "preprocess")
     # define dataset names
     dataset_names = ["bpmai_lastrev_caise_onlyAfter", "bpmai_lastrev_caise_onlyAfter2",
                      "bpmai_lastrev_caise_inProcess", "bpmai_lastrev_caise_inProcess2",
@@ -43,3 +44,10 @@ if __name__ == "__main__":
         target_folders.append(os.path.join(data_folder_path, dataset_names[i]))
 
     copy_files_with_patterns(source_folders, target_folders, file_patterns)
+    
+    # cope default preprocess file to handle preprocessing of datasets smoothly
+    preprocess_file = "preprocess_default.py"
+    preprocess_source_path = os.path.join(preprocess_folder_path, preprocess_file)
+    preprocess_destination_path = os.path.join(data_folder_path, preprocess_file)
+    shutil.copy(preprocess_source_path, preprocess_destination_path)
+    print(f"File copied from {preprocess_source_path} to {preprocess_destination_path}")
