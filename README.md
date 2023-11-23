@@ -5,13 +5,13 @@ This is the supplementary reposititory for the paper:
 We are currently cleaning up and refatcoring our code, it will be available at latest on 25.11.2023.
 
 # Installation libKGE library
-As it is mentioned in our paper, we relied on the PyTorch-based library [libKGE](https://github.com/uma-pi1/kge) to apply knowledge graph embedding models. Therefore, you need to install libKGE:
+We used the PyTorch-based library [libKGE](https://github.com/uma-pi1/kge) to apply knowledge graph embedding models. Therefore, you need to install libKGE to replicate our study:
 1. Clone libkge (i.e., `git clone https://github.com/uma-pi1/kge.git`) to have all the library's contents in the root folder **kge**.
 2. Navigate to **kge** folder: `cd kge`
 
-   We recommend to create a python environment using: `python -m venv kge_work` `source kge_work/bin/activate` for better handling of all dependencies between libraries.
+   We recommend to create a python environment using: `python -m venv kge_work` `source kge_work/bin/activate` to avoid any discrepency between libraries.
 3. Install all requirements: `pip install -e .`
-4. Make yourself familiar with main functionalities of libKGE using the documentation provided on the [libKGE repository](https://github.com/uma-pi1/kge). 
+4. Make yourself familiar with the main functionalities of libKGE using the documentation provided on the [libKGE repository](https://github.com/uma-pi1/kge). 
 
 # Adding datasets, and configuration files
 The **kge** folder includes a folder called **local** which will be used for all our experiments (see: https://github.com/uma-pi1/kge/tree/master/local). In order to replicate our results, you need to:
