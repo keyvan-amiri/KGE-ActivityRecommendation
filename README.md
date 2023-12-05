@@ -2,8 +2,6 @@
 This is the supplementary reposititory for the paper:
 "Knowledge Graph Completion for Activity Recommendation in Business Process Modeling"
 
-We are currently cleaning up and refatcoring our code, it will be available at latest on 25.11.2023.
-
 # Installation libKGE library
 We used the PyTorch-based library [libKGE](https://github.com/uma-pi1/kge) to apply knowledge graph embedding models. Therefore, you need to install libKGE to replicate our study:
 1. Clone libkge (i.e., `git clone https://github.com/uma-pi1/kge.git`) to have all the library's contents in the root folder **kge**.
